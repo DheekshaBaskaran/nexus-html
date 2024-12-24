@@ -705,6 +705,23 @@ a:focus {
   
 }
 
+.page_heading {
+  padding: 50px 0;
+  background-color: #000000;
+}
+.page_heading h1 {
+  font-size: 3rem;
+  color: #6c33f2;
+  background-image: linear-gradient(to right, #973cff, #b816cd, #3b0b4f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'League Spartan';
+  font-weight: 700;
+}
+.page_heading p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
 
 /*team section */
 .team_section {
@@ -756,7 +773,7 @@ header {
   -webkit-transition: all .1s;
   transition: all .1s;
   margin-top: 45px;
-  background: linear-gradient(to bottom, #000000, #480298);
+  background: linear-gradient(to bottom, #000000, #3f0483);
 }
 
 .team_section .team_container .box .img-box {
@@ -909,7 +926,7 @@ header {
 /* client section end */
 .info_section {
   background-color: #000000;
-  color: #6e0ddd;
+  color: #9b62dc;
   padding: 40px 0 15px 0;
 }
 
@@ -998,7 +1015,7 @@ header {
 }
 
 .info_section .info_links a:hover {
-  color: #00bbf0;
+  color: #963cfc;
 }
 
 .info_section form input {
@@ -1032,7 +1049,7 @@ header {
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #00bbf0;
+  background-color: #b068e1;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -1042,20 +1059,23 @@ header {
 }
 
 .info_section form button:hover {
-  background-color: #ea7bf6;
+  background-color: #963cfc;
 }
 
 /* footer section*/
 .footer_section {
   position: relative;
   background-color: #000000;
-  text-align: center;
+  text-align: left;
+  font-size: small;
 }
 
 .footer_section p {
   color: #ffffff;
-  padding: 100px 0;
+  padding: 10px 0;
   margin: 0;
+  font-size: small;
+  text-align: center;
 }
 
 .footer_section p a {
