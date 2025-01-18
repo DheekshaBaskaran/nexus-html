@@ -220,6 +220,41 @@ a:focus {
   border-radius: 5px;
   transition: all 0.3s;
 }
+.interestbutton {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically if the parent div has a height */
+  height: 100px; /* You can adjust this to your preferred height */
+}
+
+.btn1 {
+  background-color: #b47bf4; /* Corrected background color */
+  border-radius: 5px; /* Slight rounding of corners */
+  padding: 10px 20px; /* Add padding for better spacing and rectangle look */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 16px; /* Adjust font size */
+  width: 200px; /* Set width for rectangle */
+  height: 50px; /* Adjust height to be more rectangular */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  font-family: 'League Spartan', sans-serif;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: none; /* Remove border */
+}
+
+.btn1:hover {
+  background-color: #ffffff; /* Change background on hover */
+  color: #963cfc; /* Change text color on hover */
+}
+
+
+.btn1:hover {
+  background: #ffffff; /* Change background on hover */
+  color: #963cfc; /* Change text color on hover */
+}
 
 .custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
   content: "";
@@ -359,20 +394,21 @@ a:focus {
 
 
 .slider_section .detail-box .btn-box .btn1 {
-  background: linear-gradient(135deg,#9a50c5, #57038c); /* Darker and more intense gradient */
-  border-radius: 200px; /* Rounded corners */
-  padding: 20px;
+ background-color: #b47bf4; /* Corrected background color */
+  border-radius: 5px; /* Slight rounding of corners */
+  padding: 10px 20px; /* Add padding for better spacing and rectangle look */
   color: rgb(255, 255, 255);
   text-align: center;
-  width: 160px; /* Slightly wider for a more prominent button */
-  height: 50px; /* Increased height for better proportions */
+  font-size: 16px; /* Adjust font size */
+  width: 200px; /* Set width for rectangle */
+  height: 50px; /* Adjust height to be more rectangular */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
   font-family: 'League Spartan', sans-serif;
   margin: auto;
-  margin-top: 45px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: none; /* Remove border */
   
 }
 
