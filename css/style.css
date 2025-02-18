@@ -228,6 +228,19 @@ a:focus {
   align-items: center; /* Centers the button vertically if the parent div has a height */
   height: 100px; /* You can adjust this to your preferred height */
 }
+.notice {
+  background-color: #5b0477;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+.notice a {
+  color: #9e00d3;
+  text-decoration: underline;
+}
 
 .btn1 {
   background-color: #b47bf4; /* Corrected background color */
