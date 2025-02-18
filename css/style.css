@@ -1130,6 +1130,28 @@ header {
   text-align: center;
 }
 
+.subscribe-btn {
+  display: inline-block;
+  padding: 10px 1px;
+  background-color: #963cfc; /* Matches your existing button color */
+  color: white;
+ 
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+
+}
+
+.subscribe-btn:hover {
+  background-color: #ffffff; /* Slightly darker purple on hover */
+}
+
+
 .footer_section p a {
   color: inherit;
 }
