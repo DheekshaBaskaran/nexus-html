@@ -155,31 +155,76 @@
   
 
   <!-- end impact section -->
-
   <section id="testimonials" style="background-color: #efd6f8; padding: 60px 20px;">
     <div style="text-align: center; margin-bottom: 40px;">
       <h2 style="font-size: 2.5rem; color: #370046;">What Our Participants Have Said</h2>
       <p style="color: #555; font-size: 1.1rem;">Hear from others in the field about how Nexus is setting the standard.</p>
     </div>
   
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-      <div style="background-color: #d1c4e9; padding: 30px; border-radius: 15px; max-width: 1000px; flex: 1;">
-        <p style="color: #3e2c59; font-style: italic; font-size: 1.1rem;">
-          “When I first started researching for my topic, I knew that I would be delving very deep into my area of focus. But, I also found myself encountering and learning about the guidelines for writing professional academia, and the intricate details that go into academic papers; this knowledge is something I am extremely grateful for, as knowing how to write academically is a vital skill that I can utilize throughout college and beyond. Nexus gave me that opportunity, and along with their well-curated feedback from the judges, my experience was well worth the countless hours of research and revisions. The judges meticulously look through the structure, ideas, and vocabulary in a paper and provide excellent feedback with the goal of improving and enhancing. I was delighted to read through the comments on my paper and found so many suggestions that I would have never thought of, and this kind of mentor review is what makes Nexus a great opportunity to challenge yourself and see how your writing will be seen in the academic world. Overall, I highly recommend participating in the Nexus competition, no matter what writing experience you have. It is a great way to not only delve into higher level sciences, but to enhance your writing skills and having your writing reviewed by professionals in the field, a critical experience that you can use for college and beyond.”
-        </p>
-        <p style="color: #3e2c59; font-weight: bold; margin-top: 10px;">– Rutvi M.</p>
+    <div class="carousel-container" style="position: relative; max-width: 900px; margin: 0 auto; overflow: hidden;">
+      <div class="carousel-slide" style="display: flex; transition: transform 0.5s ease-in-out;">
+        <!-- Slide 1 -->
+        <div class="testimonial-card" style="min-width: 100%; box-sizing: border-box; background-color: #d1c4e9; padding: 30px; border-radius: 15px;">
+          <p style="color: #3e2c59; font-style: italic; font-size: 1.1rem;">
+            “When I first started researching for my topic, I knew that I would be delving very deep into my area of focus. But, I also found myself encountering and learning about the guidelines for writing professional academia, and the intricate details that go into academic papers; this knowledge is something I am extremely grateful for, as knowing how to write academically is a vital skill that I can utilize throughout college and beyond. Nexus gave me that opportunity, and along with their well-curated feedback from the judges, my experience was well worth the countless hours of research and revisions. The judges meticulously look through the structure, ideas, and vocabulary in a paper and provide excellent feedback with the goal of improving and enhancing. I was delighted to read through the comments on my paper and found so many suggestions that I would have never thought of, and this kind of mentor review is what makes Nexus a great opportunity to challenge yourself and see how your writing will be seen in the academic world. Overall, I highly recommend participating in the Nexus competition, no matter what writing experience you have. It is a great way to not only delve into higher level sciences, but to enhance your writing skills and having your writing reviewed by professionals in the field, a critical experience that you can use for college and beyond.”
+          </p>
+          <p style="color: #3e2c59; font-weight: bold; margin-top: 10px;">– Rutvi M.</p>
+        </div>
+  
+        <!-- Slide 2 -->
+        <div class="testimonial-card" style="min-width: 100%; box-sizing: border-box; background-color: #d1c4e9; padding: 30px; border-radius: 15px;">
+          <p style="color: #3e2c59; font-style: italic; font-size: 1.1rem;">
+            “I've already started another project based on what I did for the competition, so this has been really inspiring to me.”
+          </p>
+          <p style="color: #3e2c59; font-weight: bold; margin-top: 10px;">– Henry T.</p>
+        </div>
       </div>
   
-       <div style="background-color: #d1c4e9; padding: 30px; border-radius: 15px; max-width: 400px; flex: 1;">
-        <p style="color: #3e2c59; font-style: italic; font-size: 1.1rem;">
-          “I've already started another project based on what I did for the competition, so this has been really inspiring to me.”
-        </p>
-        <p style="color: #3e2c59; font-weight: bold; margin-top: 10px;">– Henry T.</p>
+      <!-- Navigation Arrows -->
+      <button onclick="moveSlide(-1); resetAutoSlide();" style="position: absolute; top: 50%; left: -50px; transform: translateY(-50%); background: none; border: none; font-size: 2rem; color: #370046;">&#10094;</button>
+      <button onclick="moveSlide(1); resetAutoSlide();" style="position: absolute; top: 50%; right: -50px; transform: translateY(-50%); background: none; border: none; font-size: 2rem; color: #370046;">&#10095;</button>
+  
+      <!-- Dots -->
+      <div id="carousel-dots" style="text-align: center; margin-top: 20px;">
+        <span class="dot" onclick="goToSlide(0); resetAutoSlide();" style="height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+        <span class="dot" onclick="goToSlide(1); resetAutoSlide();" style="height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
       </div>
     </div>
+  
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelector(".carousel-slide");
+      const dots = document.querySelectorAll(".dot");
+      const totalSlides = slides.children.length;
+      let autoSlideInterval = setInterval(() => moveSlide(1), 6000); // 6 seconds
+  
+      function updateCarousel() {
+        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        dots.forEach((dot, index) => {
+          dot.style.backgroundColor = index === currentSlide ? "#370046" : "#bbb";
+        });
+      }
+  
+      function moveSlide(step) {
+        currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+        updateCarousel();
+      }
+  
+      function goToSlide(index) {
+        currentSlide = index;
+        updateCarousel();
+      }
+  
+      function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(() => moveSlide(1), 6000);
+      }
+  
+      // Initialize
+      updateCarousel();
+    </script>
   </section>
   
-
 
 
   <!-- footer section -->
