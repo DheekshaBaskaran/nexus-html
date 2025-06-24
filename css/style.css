@@ -1908,6 +1908,93 @@ header {
   width: 2px;
   background: linear-gradient(180deg, #3B1E54, #4b1463);
 }
+/* --- Peer Review Section --- */
+.peer-review-section {
+  background-color: #f8f6ff;
+  padding: 4rem 0;
+}
+
+.peer-review-section h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #5a2c91;
+  margin-bottom: 3rem;
+}
+
+/* Reviewer Card Container */
+.peer-review-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* Make all link titles purple */
+.link-card a {
+  color: #3B1E54; /* Nexus deep purple */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-card a:hover {
+  color: #865fc5; /* Slightly lighter purple on hover */
+  text-decoration: underline;
+}
+
+/* Individual Reviewer Card */
+.reviewer-card {
+  background-color: 3B1E54;
+  border-radius: 12px;
+  padding: 2rem;
+  flex: 1 1 300px;
+  max-width: 420px;
+  box-shadow: 0 4px 10px rgba(90, 44, 145, 0.1);
+  text-align: center;
+}
+
+/* Circular Image */
+.reviewer-card .img-box {
+  margin-bottom: 1rem;
+}
+
+.reviewer-card .img-box img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b89fff;
+}
+
+/* Name & Description */
+.reviewer-card h5 {
+  color: #5a2c91;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.reviewer-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Icons */
+.reviewer-card .social_box {
+  margin-top: 1rem;
+}
+
+.reviewer-card .social_box a {
+  color: #5a2c91;
+  margin: 0 10px;
+  font-size: 1.25rem;
+  transition: color 0.2s ease;
+}
+
+.reviewer-card .social_box a:hover {
+  color: #865fc5;
+}
+
 
 /* Futuristic Dots */
 .timeline-item .dot {
