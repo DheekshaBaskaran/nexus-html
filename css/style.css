@@ -1908,7 +1908,21 @@ header {
   width: 2px;
   background: linear-gradient(180deg, #3B1E54, #4b1463);
 }
-/* --- Peer Review Section --- */
+
+
+/* LINK STYLING FOR "GET INVOLVED" CARDS */
+.link-card a {
+  color: #3B1E54; /* Nexus deep purple */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-card a:hover {
+  color: #865fc5;
+  text-decoration: underline;
+}
+
+/* PEER REVIEW SECTION CONTAINER */
 .peer-review-section {
   background-color: #f8f6ff;
   padding: 4rem 0;
@@ -1921,7 +1935,7 @@ header {
   margin-bottom: 3rem;
 }
 
-/* Reviewer Card Container */
+/* FLEX ROW FOR REVIEWERS */
 .peer-review-row {
   display: flex;
   justify-content: center;
@@ -1930,21 +1944,10 @@ header {
   max-width: 1000px;
   margin: 0 auto;
 }
-/* Make all link titles purple */
-.link-card a {
-  color: #3B1E54; /* Nexus deep purple */
-  text-decoration: none;
-  font-weight: 600;
-}
 
-.link-card a:hover {
-  color: #865fc5; /* Slightly lighter purple on hover */
-  text-decoration: underline;
-}
-
-/* Individual Reviewer Card */
+/* REVIEWER CARD */
 .reviewer-card {
-  background-color: 3B1E54;
+  background-color: #3B1E54;
   border-radius: 12px;
   padding: 2rem;
   flex: 1 1 300px;
@@ -1953,7 +1956,7 @@ header {
   text-align: center;
 }
 
-/* Circular Image */
+/* IMAGE STYLING */
 .reviewer-card .img-box {
   margin-bottom: 1rem;
 }
@@ -1966,35 +1969,39 @@ header {
   border: 3px solid #b89fff;
 }
 
-/* Name & Description */
+/* TEXT STYLING */
 .reviewer-card h5 {
-  color: #5a2c91;
+  color: #f4f0ff;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .reviewer-card p {
   font-size: 0.95rem;
-  color: #444;
+  color: #e0e0e0;
   line-height: 1.5;
 }
 
-/* Icons */
+/* SOCIAL ICONS */
 .reviewer-card .social_box {
   margin-top: 1rem;
 }
 
 .reviewer-card .social_box a {
-  color: #5a2c91;
+  color: #bfa7ff;
   margin: 0 10px;
   font-size: 1.25rem;
   transition: color 0.2s ease;
 }
 
 .reviewer-card .social_box a:hover {
-  color: #865fc5;
+  color: #ffffff;
 }
 
+/* OPTIONAL: CACHE TIP
+To prevent browser caching issues:
+<link rel="stylesheet" href="style.css?v=1.2">
+*/
 
 /* Futuristic Dots */
 .timeline-item .dot {
